@@ -44,7 +44,7 @@ useWatchCharacters(newNote, 50);
         v-if="notes.length < 1"
         class="is-size-4 has-text-centered has-text-grey-light is-family-monospace py-6"
       >
-        No notes here yet...
+        No notes here yooo~~~
       </div>
     </template>
   </div>
