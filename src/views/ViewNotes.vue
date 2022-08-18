@@ -28,7 +28,6 @@ useWatchCharacters(newNote, 50);
       <template #buttons>
         <button
           class="button is-link has-background-success"
-          :disabled="!newNote"
           @click="addNoteComponent"
         >
           Add New Note
