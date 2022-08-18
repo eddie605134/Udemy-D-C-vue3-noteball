@@ -7,13 +7,13 @@
       <div class="control">
         <textarea
           id="tar"
-          v-model="modelValue"
+          :value="modelValue"
           class="textarea"
           :placeholder="placeholder"
           v-autofocus
           maxlength="80"
           ref="textareaRef"
-          @input="$emit('update:modelValue', modelValue)"
+          @input="$emit('update:modelValue', $event.target.value)"
         ></textarea>
       </div>
     </div>
@@ -29,9 +29,12 @@
 import { ref } from 'vue'
 import { vAutofocus } from '@/directives/vAutofocus';
 
+
 const props = defineProps({
   modelValue: {
     type: String,
+    default: '',
+    required: true
   },
   bgColor: {
     type: String,
@@ -59,4 +62,3 @@ defineExpose({
   focusTextArea
 });
 </script>
-<style lang=""></style>
