@@ -29,8 +29,7 @@ const handleSave = () => {
 
 ;</script>
 <template lang="">
-<div>123</div>
-  <!-- <NewAddEdit 
+  <NewAddEdit 
     ref="editRef"
     v-model="noteContent"
     bgColor="link"
@@ -52,6 +51,6 @@ const handleSave = () => {
         Save Note
       </button>
     </template>
-  </NewAddEdit> -->
+  </NewAddEdit>
 </template>
 <style lang=""></style>
