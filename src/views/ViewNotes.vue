@@ -1,6 +1,6 @@
 <script setup>
 import Note from '@/components/Notes/Notes.vue';
-import NewAddEdit from '@/components/Notes/NewAddEdit.vue';
+import NewAddEdit from '@/components/Notes/NewAddNote.vue';
 import { ref, onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useStoreNotes } from '@/store/storeNotes';
