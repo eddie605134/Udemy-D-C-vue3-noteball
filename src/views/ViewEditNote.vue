@@ -1,5 +1,5 @@
 <script setup>
-import NewAddEdit from '@/components/Notes/NewAddNote.vue';
+// import NewAddEdit from '@/components/Notes/NewAddNote.vue';
 import { ref } from 'vue'
 import { useStoreNotes } from '@/store/storeNotes';
 import { useRoute, useRouter } from 'vue-router';
@@ -29,7 +29,8 @@ const handleSave = () => {
 
 ;</script>
 <template lang="">
-  <NewAddEdit 
+<div>123</div>
+  <!-- <NewAddEdit 
     ref="editRef"
     v-model="noteContent"
     bgColor="link"
@@ -51,6 +52,6 @@ const handleSave = () => {
         Save Note
       </button>
     </template>
-  </NewAddEdit>
+  </NewAddEdit> -->
 </template>
 <style lang=""></style>
