@@ -1,6 +1,6 @@
 <script setup>
 import Note from '@/components/Notes/Notes.vue';
-import AddEdit from '@/components/Notes/AddEdit.vue';
+import NewAddEdit from '@/components/Notes/NewAddEdit.vue';
 import { ref, onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useStoreNotes } from '@/store/storeNotes';
@@ -24,7 +24,7 @@ useWatchCharacters(newNote, 50);
 </script>
 <template lang="">
   <div class="notes">
-    <AddEdit v-model="newNote" ref="editRef">
+    <NewAddEdit v-model="newNote" ref="editRef">
       <template #buttons>
         <button
           class="button is-link has-background-success"
@@ -34,7 +34,7 @@ useWatchCharacters(newNote, 50);
           Add New Note
         </button>
       </template>
-    </AddEdit>
+    </NewAddEdit>
 
     <progress v-if="!noteLoaded" class="progress is-large is-success" max="100" />
 
