@@ -1,5 +1,5 @@
 <script setup>
-// import NewAddEdit from '@/components/Notes/NewAddNote.vue';
+import NewAddEdit from '@/components/Notes/NewAddNote.vue';
 import { ref } from 'vue'
 import { useStoreNotes } from '@/store/storeNotes';
 import { useRoute, useRouter } from 'vue-router';
